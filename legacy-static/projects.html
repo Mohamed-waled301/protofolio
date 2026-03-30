@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My Projects — Mohamed Waled. Live GitHub Pages builds and front-end work.">
+	<title>My Projects | Mohamed Waled</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="loader" class="loader-overlay" aria-hidden="true">
+		<div class="loader" role="status"></div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg glass-nav fixed-top py-3">
+		<div class="container">
+			<a class="navbar-brand fw-bold display-font text-truncate me-2" style="max-width: 12rem;" href="index.html" title="Mohamed Waled">Mohamed Waled<span class="text-gradient">.</span></a>
+			<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navMain">
+				<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					<li class="nav-item ms-lg-2">
+						<button type="button" id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3" aria-label="Switch theme">
+							<i class="fa-solid fa-moon" aria-hidden="true"></i>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main class="pt-5">
+		<header class="page-header" id="my-projects">
+			<div class="container text-center" data-aos="fade-up">
+				<p class="text-uppercase small text-secondary fw-semibold mb-2">Portfolio</p>
+				<h1 class="display-5 display-font fw-bold mb-3">My Projects</h1>
+				<p class="text-secondary mx-auto mb-0" style="max-width: 640px;">
+					A curated set of static sites deployed on GitHub Pages — structured layouts, responsive patterns, and polished UI details.
+					Click a card to open the live demo; hover for quick links.
+				</p>
+				<div class="d-flex flex-wrap justify-content-center gap-2 mt-4" data-aos="fade-up" data-aos-delay="80">
+					<button type="button" class="filter-btn active" data-filter="all">All</button>
+					<button type="button" class="filter-btn" data-filter="web">Web</button>
+				</div>
+			</div>
+		</header>
+
+		<section class="section-spacing pt-3 pb-5">
+			<div class="container">
+				<div id="projectsGrid" class="row g-4 g-lg-5">
+					<!-- 1: Strict Page -->
+					<div class="col-md-6 col-xl-4" data-category="web" data-aos="fade-up">
+						<article
+							class="card border-0 rounded-4 shadow project-card h-100"
+							data-demo-url="https://mohamed-waled301.github.io/onsite1/"
+							data-project-label="Open Strict Page live demo">
+							<div class="project-image position-relative">
+								<div class="project-thumb-wrap">
+									<img src="images/projects/project1.jpg" alt="Strict Page — project preview" class="project-thumb" width="800" height="500" loading="lazy">
+									<div class="overlay position-absolute">
+										<div class="overlay-inner">
+											<a href="https://mohamed-waled301.github.io/onsite1/" class="btn btn-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Live Demo</a>
+											<a href="https://github.com/Mohamed-waled301" class="btn btn-outline-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body p-4">
+								<h2 class="h5 display-font mb-2">Strict Page</h2>
+								<p class="text-secondary small mb-0">Structured layout with clear hierarchy, responsive sections, and disciplined spacing for a polished single-page experience.</p>
+							</div>
+						</article>
+					</div>
+					<!-- 2: Kids webpage -->
+					<div class="col-md-6 col-xl-4" data-category="web" data-aos="fade-up" data-aos-delay="60">
+						<article
+							class="card border-0 rounded-4 shadow project-card h-100"
+							data-demo-url="https://mohamed-waled301.github.io/kids-webpage/"
+							data-project-label="Open Kids Learning Webpage live demo">
+							<div class="project-image position-relative">
+								<div class="project-thumb-wrap">
+									<img src="images/projects/project2.jpg" alt="Kids Learning Webpage — project preview" class="project-thumb" width="800" height="500" loading="lazy">
+									<div class="overlay position-absolute">
+										<div class="overlay-inner">
+											<a href="https://mohamed-waled301.github.io/kids-webpage/" class="btn btn-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Live Demo</a>
+											<a href="https://github.com/Mohamed-waled301" class="btn btn-outline-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body p-4">
+								<h2 class="h5 display-font mb-2">Kids Learning Webpage</h2>
+								<p class="text-secondary small mb-0">A friendly, colorful layout aimed at younger readers — readable typography, playful sections, and simple interactions.</p>
+							</div>
+						</article>
+					</div>
+					<!-- 3: AppexY Phone -->
+					<div class="col-md-6 col-xl-4" data-category="web" data-aos="fade-up" data-aos-delay="120">
+						<article
+							class="card border-0 rounded-4 shadow project-card h-100"
+							data-demo-url="https://mohamed-waled301.github.io/onsiite-4/"
+							data-project-label="Open AppexY Phone live demo">
+							<div class="project-image position-relative">
+								<div class="project-thumb-wrap">
+									<img src="images/projects/project3.jpg" alt="AppexY Phone — project preview" class="project-thumb" width="800" height="500" loading="lazy">
+									<div class="overlay position-absolute">
+										<div class="overlay-inner">
+											<a href="https://mohamed-waled301.github.io/onsiite-4/" class="btn btn-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Live Demo</a>
+											<a href="https://github.com/Mohamed-waled301" class="btn btn-outline-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body p-4">
+								<h2 class="h5 display-font mb-2">AppexY Phone</h2>
+								<p class="text-secondary small mb-0">Product-focused landing with emphasis on visuals, feature blocks, and conversion-friendly flow across devices.</p>
+							</div>
+						</article>
+					</div>
+					<!-- 4: Restaurant Campaign Page -->
+					<div class="col-md-6 col-xl-4" data-category="web" data-aos="fade-up">
+						<article
+							class="card border-0 rounded-4 shadow project-card h-100"
+							data-demo-url="https://mohamed-waled301.github.io/onsite_3/"
+							data-project-label="Open Restaurant Campaign Page live demo">
+							<div class="project-image position-relative">
+								<div class="project-thumb-wrap">
+									<img src="images/projects/project4.jpg" alt="Restaurant Campaign Page — project preview" class="project-thumb" width="800" height="500" loading="lazy">
+									<div class="overlay position-absolute">
+										<div class="overlay-inner">
+											<a href="https://mohamed-waled301.github.io/onsite_3/" class="btn btn-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Live Demo</a>
+											<a href="https://github.com/Mohamed-waled301" class="btn btn-outline-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body p-4">
+								<h2 class="h5 display-font mb-2">Restaurant Campaign Page</h2>
+								<p class="text-secondary small mb-0">Campaign-style page for a restaurant brand — hero, menu highlights, and CTAs tuned for engagement.</p>
+							</div>
+						</article>
+					</div>
+					<!-- 5: Furni Landing Page -->
+					<div class="col-md-6 col-xl-4" data-category="web" data-aos="fade-up" data-aos-delay="60">
+						<article
+							class="card border-0 rounded-4 shadow project-card h-100"
+							data-demo-url="https://mohamed-waled301.github.io/onsite5/"
+							data-project-label="Open Furni Landing Page live demo">
+							<div class="project-image position-relative">
+								<div class="project-thumb-wrap">
+									<img src="images/projects/project5.jpg" alt="Furni Landing Page — project preview" class="project-thumb" width="800" height="500" loading="lazy">
+									<div class="overlay position-absolute">
+										<div class="overlay-inner">
+											<a href="https://mohamed-waled301.github.io/onsite5/" class="btn btn-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Live Demo</a>
+											<a href="https://github.com/Mohamed-waled301" class="btn btn-outline-light btn-sm rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body p-4">
+								<h2 class="h5 display-font mb-2">Furni Landing Page</h2>
+								<p class="text-secondary small mb-0">Furniture / interior brand landing with refined grids, imagery, and a calm, premium aesthetic.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer py-4 mt-5">
+		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary">
+			<span>&copy; <span id="year"></span> Mohamed Waled.</span>
+			<div class="d-flex gap-3">
+				<a href="#" data-social="github" class="text-secondary text-decoration-none hover-text" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github fa-lg"></i></a>
+				<a href="#" data-social="linkedin" class="text-secondary text-decoration-none hover-text" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<button type="button" id="backToTop" class="btn btn-primary rounded-circle back-to-top d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;" aria-label="Back to top">
+		<i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/main.js" defer></script>
+</body>
+</html>
