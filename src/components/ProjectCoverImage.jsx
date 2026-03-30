@@ -1,7 +1,8 @@
 import { useState, useMemo } from 'react';
 import { getProjectCoverUrlCandidates } from '../utils/projectImage.js';
+import { publicUrl } from '../utils/publicUrl.js';
 
-const FINAL_FALLBACK = '/images/placeholder-project.svg';
+const FINAL_FALLBACK = publicUrl('images/placeholder-project.svg');
 
 /**
  * Tries project cover URLs in order; on error advances (no broken img icon).
@@ -10,7 +11,7 @@ const FINAL_FALLBACK = '/images/placeholder-project.svg';
 export default function ProjectCoverImage({ project, alt, className = '' }) {
   const urls = useMemo(() => {
     const candidates = getProjectCoverUrlCandidates(project);
-    return [...candidates, FINAL_FALLBACK, '/images/fallback.png'];
+    return [...candidates, FINAL_FALLBACK, publicUrl('images/fallback.png')];
   }, [project]);
 
   const [index, setIndex] = useState(0);

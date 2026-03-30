@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { HiSpeakerWave, HiSpeakerXMark } from 'react-icons/hi2';
+import { publicUrl } from '../utils/publicUrl.js';
 
 /** Place your file at: public/sounds/intro-sound.mp3 */
-const AUDIO_SRC = '/sounds/intro-sound.mp3';
+const AUDIO_SRC = publicUrl('sounds/intro-sound.mp3');
 const STORAGE_MUTE = 'portfolio-intro-muted';
 const VOLUME = 0.3;
 

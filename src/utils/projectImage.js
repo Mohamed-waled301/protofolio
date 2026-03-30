@@ -1,3 +1,5 @@
+import { publicUrl } from './publicUrl.js';
+
 /**
  * Build slug from project title for filenames in /public/images/projects/
  * Example: "Strict Page" → "strict-page"
@@ -36,7 +38,7 @@ export function getProjectCoverUrlCandidates(project) {
   for (const base of basenames) {
     if (!base) continue;
     for (const ext of IMAGE_EXTENSIONS) {
-      urls.push(`/images/projects/${base}.${ext}`);
+      urls.push(publicUrl(`images/projects/${base}.${ext}`));
     }
   }
   return urls;
