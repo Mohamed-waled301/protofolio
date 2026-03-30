@@ -32,11 +32,18 @@
     isolation: isolate;
   }
 
-  /* Project cover — same height everywhere, no stretch */
+  /* Project cover — base-safe URLs from `publicUrl`; fixed frame on GitHub Pages */
+  .project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .project-card-img {
     display: block;
     width: 100%;
-    height: 230px;
+    height: 220px;
     object-fit: cover;
     object-position: center;
     border-radius: 14px;

@@ -16,12 +16,12 @@ export function slugifyTitleForImage(title) {
 }
 
 /**
- * Primary path from title (matches: lowercase + spaces → hyphens + .png)
- * @example getImagePath("AppexY Phone") → "/images/projects/appexy-phone.png"
+ * Title slug → PNG under `public/images/projects/` (GitHub Pages–safe via BASE_URL).
+ * Same as: `${import.meta.env.BASE_URL}images/projects/${slug}.png` with normalized slashes.
  */
 export function getImagePath(title) {
   const slug = slugifyTitleForImage(title) || 'project';
-  return `/images/projects/${slug}.png`;
+  return publicUrl(`images/projects/${slug}.png`);
 }
 
 const IMAGE_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp'];

@@ -3,9 +3,9 @@ import { HiExternalLink } from 'react-icons/hi';
 import { FaGithub } from 'react-icons/fa';
 import ProjectCoverImage from './ProjectCoverImage.jsx';
 
-/** Fixed media height — matches .project-card-img (230px) */
+/** Fixed media height — matches .project-card img / .project-card-img (220px) */
 const IMAGE_WRAP =
-  'project-card-media relative h-[230px] w-full shrink-0 overflow-hidden rounded-t-2xl';
+  'project-card-media relative h-[220px] w-full shrink-0 overflow-hidden rounded-t-2xl';
 
 export default function ProjectCard({ project, index = 0 }) {
   const { title, description, liveUrl, githubUrl } = project;
