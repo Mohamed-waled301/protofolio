@@ -1,6 +1,6 @@
 /**
- * Public folder URL for GitHub Pages / local dev (`base` in vite.config → `import.meta.env.BASE_URL`).
- * Always use this (or `import.meta.env.BASE_URL`) instead of hardcoded `/images/...`.
+ * Resolves `public/` assets for deployment. Pass paths like `images/foo.png` (no leading slash).
+ * Produces `${BASE_URL}images/foo.png` — on GitHub project pages this is `/protofolio/images/...`, not site-root `/images/...`.
  */
 export function publicUrl(path) {
   const base = import.meta.env.BASE_URL || '/';
