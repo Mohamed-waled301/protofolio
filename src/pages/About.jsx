@@ -35,8 +35,10 @@ export default function About() {
             <SafeImage
               src={PROFILE_IMAGE_SRC}
               fallback={PROFILE_FALLBACK_SRC}
-              alt="Mohamed Waled"
-              className="aspect-[4/3] w-full object-cover"
+              alt="Mohamed Waled — front-end developer and data analyst, portrait photo"
+              width={960}
+              height={720}
+              className="aspect-[4/3] w-full object-cover object-center"
               loading="eager"
             />
             <div className="border-t border-slate-100 p-6 dark:border-white/5">

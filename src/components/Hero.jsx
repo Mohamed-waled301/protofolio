@@ -117,8 +117,10 @@ export default function Hero() {
                     <SafeImage
                       src={PROFILE_IMAGE_SRC}
                       fallback={PROFILE_FALLBACK_SRC}
-                      alt="Mohamed Waled"
-                      className="h-56 w-56 rounded-full object-cover sm:h-64 sm:w-64 lg:h-72 lg:w-72"
+                      alt="Mohamed Waled — front-end developer and data analyst, portrait photo"
+                      width={576}
+                      height={576}
+                      className="h-56 w-56 rounded-full object-cover object-center sm:h-64 sm:w-64 lg:h-72 lg:w-72"
                       loading="eager"
                     />
                   </div>

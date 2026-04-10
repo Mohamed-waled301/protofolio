@@ -1,5 +1,8 @@
 import { publicUrl } from '../utils/publicUrl.js';
 
-/** Hero / About profile — `public/images/rana-image.png` (URL is BASE_URL + `/images/...` for GitHub Pages). */
-export const PROFILE_IMAGE_SRC = publicUrl('images/rana-image.png');
+/**
+ * Profile photo: `public/images/mohamed-waled.png`.
+ * Use `publicUrl` so deploy works with Vite `base` (GitHub Pages: `/protofolio/images/...`, Vercel root: `/images/...`).
+ */
+export const PROFILE_IMAGE_SRC = publicUrl('images/mohamed-waled.png');
 export const PROFILE_FALLBACK_SRC = publicUrl('images/profile-fallback.svg');
